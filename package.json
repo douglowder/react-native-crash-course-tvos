@@ -12,10 +12,11 @@
     "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug"
   },
   "dependencies": {
+    "json-server": "^0.15.0",
     "react": "16.8.3",
-    "react-native": "0.59.8",
-    "react-native-navigation": "^2.18.5",
-    "react-native-ui-lib": "^3.25.0",
+    "react-native": "npm:react-native-tvos@0.60.4-2",
+    "react-native-navigation": "https://github.com/dlowder-salesforce/react-native-navigation#tvos",
+    "react-native-ui-lib": "https://github.com/dlowder-salesforce/react-native-ui-lib#tvos",
     "remx": "^2.0.51"
   },
   "devDependencies": {
