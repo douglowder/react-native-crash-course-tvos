@@ -65,6 +65,8 @@ PODS:
     - React-cxxreact (= 0.60.4-2)
     - React-jsi (= 0.60.4-2)
   - React-jsinspector (0.60.4-2)
+  - React-RCTActionSheet (0.60.4-2):
+    - React-Core (= 0.60.4-2)
   - React-RCTAnimation (0.60.4-2):
     - React-Core (= 0.60.4-2)
   - React-RCTBlob (0.60.4-2):
@@ -81,6 +83,8 @@ PODS:
   - React-RCTSettings (0.60.4-2):
     - React-Core (= 0.60.4-2)
   - React-RCTText (0.60.4-2):
+    - React-Core (= 0.60.4-2)
+  - React-RCTVibration (0.60.4-2):
     - React-Core (= 0.60.4-2)
   - React-RCTWebSocket (0.60.4-2):
     - React-Core (= 0.60.4-2)
@@ -103,6 +107,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
   - React-RCTImage (from `../node_modules/react-native/Libraries/Image`)
@@ -110,6 +115,7 @@ DEPENDENCIES:
   - React-RCTNetwork (from `../node_modules/react-native/Libraries/Network`)
   - React-RCTSettings (from `../node_modules/react-native/Libraries/Settings`)
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
+  - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
   - ReactNativeUiLib (from `../node_modules/react-native-ui-lib`)
@@ -142,6 +148,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  React-RCTActionSheet:
+    :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
     :path: "../node_modules/react-native/Libraries/NativeAnimation"
   React-RCTBlob:
@@ -156,6 +164,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Settings"
   React-RCTText:
     :path: "../node_modules/react-native/Libraries/Text"
+  React-RCTVibration:
+    :path: "../node_modules/react-native/Libraries/Vibration"
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   ReactNativeNavigation:
@@ -178,6 +188,7 @@ SPEC CHECKSUMS:
   React-jsi: db2eeac98240df8c8b79c8ad2eaa6ebb376bb60f
   React-jsiexecutor: 7605fb25e36a6c0c9e817b0ae16560cc44f318ec
   React-jsinspector: 938d19f90b4f1d45a919018f33b89d136d6ee6f0
+  React-RCTActionSheet: a8254f07260c54390a0bc02f9b5f6ee9a9aa8d4f
   React-RCTAnimation: b56fbaba7a2f7d16e36a77ece6aecf41546b18d9
   React-RCTBlob: 4b91774a1d416ee7f9dde8326684aa350c290779
   React-RCTImage: 2175f970d3d31b463d5879db24e11d5b6fcd7b5c
@@ -185,11 +196,12 @@ SPEC CHECKSUMS:
   React-RCTNetwork: 749c1a515fd4a8c21409821c5d494230a4f90160
   React-RCTSettings: c3e7005486cc8422730157b4bfdd27efac165627
   React-RCTText: 1721a389591e44e603a17919c33568cf5701b220
+  React-RCTVibration: c1ff66767d47a2c8eb21b956cbdd160dd093a70e
   React-RCTWebSocket: d11b4a675cc99dadd312b3f1746820e367388557
   ReactNativeNavigation: 78bf57ad3fdd2767d23979b04dcdb62ceed307cc
   ReactNativeUiLib: 19300f66f39b3232bdedb9daf86074c17f02a2a3
   yoga: a05f8dd563af554956fb55b2ffbb76a40de6228e
 
-PODFILE CHECKSUM: e08ce262d7fdc80d6a5216e4e0726e46c73fd076
+PODFILE CHECKSUM: c33b05937338ceedad50e988e3848ca788b76909
 
 COCOAPODS: 1.7.5
