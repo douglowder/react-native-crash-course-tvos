@@ -93,6 +93,7 @@ PODS:
     - React
   - ReactNativeUiLib (3.3.132):
     - React
+  - SocketRocket (0.5.1)
   - yoga (0.60.4-2.React)
 
 DEPENDENCIES:
@@ -119,6 +120,7 @@ DEPENDENCIES:
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
   - ReactNativeUiLib (from `../node_modules/react-native-ui-lib`)
+  - SocketRocket (from `../node_modules/detox/ios_src/SocketRocket`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -172,6 +174,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-navigation"
   ReactNativeUiLib:
     :path: "../node_modules/react-native-ui-lib"
+  SocketRocket:
+    :path: "../node_modules/detox/ios_src/SocketRocket"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -200,6 +204,7 @@ SPEC CHECKSUMS:
   React-RCTWebSocket: d11b4a675cc99dadd312b3f1746820e367388557
   ReactNativeNavigation: 78bf57ad3fdd2767d23979b04dcdb62ceed307cc
   ReactNativeUiLib: 19300f66f39b3232bdedb9daf86074c17f02a2a3
+  SocketRocket: dbb1554b8fc288ef8ef370d6285aeca7361be31e
   yoga: a05f8dd563af554956fb55b2ffbb76a40de6228e
 
 PODFILE CHECKSUM: c33b05937338ceedad50e988e3848ca788b76909

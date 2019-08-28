@@ -12,6 +12,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D98E05E2317354600A282B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D98E05C2317354600A282B0 /* LaunchScreen.xib */; };
 		2DCD954D1E0B4F2C00145EB5 /* mobileCrashCourseTempTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mobileCrashCourseTempTests.m */; };
 		2DE2B76F23139E610096AD1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DE2B7702313A0300096AD1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -54,6 +55,7 @@
 		1E5197D4D84B5218B60D64DD /* libPods-mobileCrashCourseTemp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileCrashCourseTemp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* mobileCrashCourseTemp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobileCrashCourseTemp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* mobileCrashCourseTemp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobileCrashCourseTemp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D98E05D2317354600A282B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = mobileCrashCourseTemp/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		47A1648164B42DE14A88E516 /* Pods-mobileCrashCourseTempTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileCrashCourseTempTests.release.xcconfig"; path = "Target Support Files/Pods-mobileCrashCourseTempTests/Pods-mobileCrashCourseTempTests.release.xcconfig"; sourceTree = "<group>"; };
 		489DFE2DD6AB412C05035C50 /* Pods-mobileCrashCourseTemp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileCrashCourseTemp.debug.xcconfig"; path = "Target Support Files/Pods-mobileCrashCourseTemp/Pods-mobileCrashCourseTemp.debug.xcconfig"; sourceTree = "<group>"; };
 		54CC4A35A903F7557F464881 /* libPods-mobileCrashCourseTempTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileCrashCourseTempTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 		13B07FAE1A68108700A75B9A /* mobileCrashCourseTemp */ = {
 			isa = PBXGroup;
 			children = (
+				2D98E05C2317354600A282B0 /* LaunchScreen.xib */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -333,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D98E05E2317354600A282B0 /* LaunchScreen.xib in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +564,17 @@
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D98E05C2317354600A282B0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D98E05D2317354600A282B0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
