@@ -93,7 +93,7 @@ class AddPost extends Component {
           floatingPlaceholder
           placeholder="Post text"
           onChangeText={this.onChangeText}
-          expandable
+          floatOnFocus
         />
       </View>
     );

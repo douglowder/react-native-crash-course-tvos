@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "bash post-install.sh",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "start-e2e": "RN_SRC_EXT=e2e.js react-native start",
     "test": "jest && detox test",
@@ -31,16 +32,5 @@
   },
   "jest": {
     "preset": "react-native"
-  },
-  "detox": {
-    "test-runner": "mocha",
-    "configurations": {
-      "ios.sim.debug": {
-        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/mobileCrashCourseTemp.app",
-        "build": "xcodebuild -project ios/mobileCrashCourseTemp.xcodeproj -scheme mobileCrashCourseTemp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
-        "type": "ios.simulator",
-        "name": "iPhone 8"
-      }
-    }
   }
 }
