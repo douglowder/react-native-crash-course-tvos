@@ -37,10 +37,13 @@ target 'mobileCrashCourseTemp' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-#  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
-#  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
+  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
+  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
+  pod 'RNDateTimePicker', :path => '../node_modules/@react-native-community/datetimepicker'
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+  pod 'react-native-blur', :path => '../node_modules/@react-native-community/blur' 
 
-  use_native_modules!
   target 'mobileCrashCourseTempTests' do
     inherit! :search_paths
     # Pods for testing
@@ -82,10 +85,14 @@ target 'mobileCrashCourseTemp-tvOS' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-#  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
-#  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
+  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
+  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
+#  pod 'RNDateTimePicker', :path => '../node_modules/@react-native-community/datetimepicker'
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+  pod 'react-native-blur', :path => '../node_modules/@react-native-community/blur' 
 
-  use_native_modules!
+#  !use_native_modules
   target 'mobileCrashCourseTemp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing

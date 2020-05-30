@@ -12,11 +12,16 @@
     "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug"
   },
   "dependencies": {
+    "@react-native-community/blur": "https://github.com/react-native-community/react-native-blur#tvos",
+    "@react-native-community/datetimepicker": "^2.4.0",
+    "@react-native-community/netinfo": "^5.9.2",
     "json-server": "^0.15.0",
     "react": "16.11.0",
-    "react-native": "npm:react-native-tvos@0.62.2-0",
+    "react-native": "https://github.com/react-native-community/react-native-tvos#tvos-v0.62.2",
+    "react-native-gesture-handler": "^1.6.1",
     "react-native-navigation": "https://github.com/dlowder-salesforce/react-native-navigation#tvos-0.62.2",
-    "react-native-ui-lib": "3.3.294",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-ui-lib": "https://github.com/dlowder-salesforce/react-native-ui-lib#tvos",
     "remx": "^2.0.51"
   },
   "devDependencies": {

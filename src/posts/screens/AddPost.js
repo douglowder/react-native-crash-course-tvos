@@ -5,7 +5,7 @@ import {Navigation} from 'react-native-navigation';
 
 import * as Presenter from './AddPost.presenter';
 
-class AddPost extends Component {
+export default class AddPost extends Component {
 
   static propTypes = {
     componentId: PropTypes.string,
@@ -100,4 +100,3 @@ class AddPost extends Component {
   }
 }
 
-export default AddPost;
