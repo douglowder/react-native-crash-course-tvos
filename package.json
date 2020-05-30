@@ -33,5 +33,16 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "detox": {
+    "test-runner": "mocha",
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/mobileCrashCourseTemp/Build/Products/Debug-iphonesimulator/mobileCrashCourseTemp.app",
+        "build": "xcodebuild -project ios/mobileCrashCourseTemp.xcodeproj -scheme mobileCrashCourseTemp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      }
+    }
   }
 }

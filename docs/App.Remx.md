@@ -22,7 +22,7 @@ Remx takes the redux (flux) architecture and enforces it through a short, simple
 > We are not going to go into the big argument about Redux Vs Mobx Vs other state management solutions. Some of our projects use Redux, some use Mobx, some are even using both.
 
 ## Preliminaries
-* Have no idea what Flux is? Watch the following [video](https://www.youtube.com/watch?v=nYkdrAPrdcw#t=10m10s) (14 min)
+* Have no idea what Flux is? Watch the following [video](https://www.youtube.com/watch?v=nYkdrAPrdcw#t=10m10s) (from ~10 to ~24 min)
 * Watch the first part (until 18:00) of [[Redux] - The Best Explanation of How it Works](https://www.youtube.com/watch?v=3sjMRS1gJys) - It might be about Redux but it's a great explanation about why we even need state management.
 * Watch a talk by Yedidya K explaining the benefits of Remx: [Remx: The Happy Middle](https://www.youtube.com/watch?v=_hLnBlqKrIA) (21:37 min)
 
@@ -42,13 +42,13 @@ Create a `posts.store.js` file in the `posts` folder of your Remx store. The fir
     {
       "id": 1,
       "title": "Post 1",
-      "author": "Post 1 text",
+      "text": "Post 1 text",
       "img": "https://picsum.photos/200/200/?image=1"
     },
     {
       "id": 2,
       "title": "Post 2",
-      "author": "Post 2 text",
+      "text": "Post 2 text",
       "img": "https://picsum.photos/200/200/?image=2"
     }
   ]
@@ -469,7 +469,7 @@ Clicking on the `Delete` button on the `ViewPost` screen must tell our app to de
 
 ```js
 deletePost(id) {
-    state.posts = filter(state.posts, post => post.id !== id);
+    state.posts = state.posts.filter(post => post.id !== id);
 }
 ```
 

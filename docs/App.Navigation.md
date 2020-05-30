@@ -30,7 +30,7 @@ Here's the outline of what we are going to build in this section:
 You can follow the react-native [getting started guide](https://facebook.github.io/react-native/docs/getting-started)(Choose "React Native CLI Quickstart" and not "Expo Quickstart") to make sure you have all dependencies installed. If this is not the first time you are creating a react-native project just open the terminal and run:
 
 ```sh
-react-native init wixMobileCrashCourse
+react-native init wixMobileCrashCourse --version 0.59.1
 cd wixMobileCrashCourse
 ```
 To run the project you will need to do:
@@ -46,6 +46,8 @@ You should then see your new app running within your simulators:
 As `react-native-navigation` is a native navigation library, so integrating it into your app will require editing native files. Follow the installation guides in the [documentation here](https://wix.github.io/react-native-navigation/#/).
 
 Make sure your app is still running in both simulators and that you are not getting any red screens.
+
+:exclamation: If you're running React Native 0.60+ make sure you install React Native Navigation v3.0.0 or later.
 
 # Adding the Screens
 ### 3. Create and Register Screens
@@ -294,7 +296,7 @@ class AddPost extends Component {
         }],
         leftButtons: [{
           id: 'cancelBtn',
-          icon: require('../../icons/x.icon.png')
+          icon: require('../../icons/x.png')
         }]
       }
     };

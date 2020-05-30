@@ -45,7 +45,7 @@ In addition, we started working with a new utility library called “[Kompot](ht
 1. Read the Jest docs about [using Matchers](https://jestjs.io/docs/en/using-matchers), [testing asynchronous code](https://jestjs.io/docs/en/asynchronous), and [mock functions](https://jestjs.io/docs/en/mock-functions)
 
 ### Useful Links
-* Bookmark Jest's API reference for [Expect](https://jestjs.io/docs/en/expect), [Mock Functions](https://jestjs.io/docs/en/expect), and [The Jest Object](https://jestjs.io/docs/en/expect)
+* Bookmark Jest's API reference for [Expect](https://jestjs.io/docs/en/expect), [Mock Functions](https://jestjs.io/docs/en/mock-function-api), and [The Jest Object](https://jestjs.io/docs/en/jest-object)
 
 
 # Getting Started
@@ -124,6 +124,13 @@ A couple of hints:
 * Use jest.mock to mock `react-native-navigation`
 * Use jest.mock to mock `posts.actions`
 * If you are having trouble, you can take a look at the final tests [here](https://github.com/wix-playground/wix-mobile-crash-course/blob/master/src/posts/screens/AddPost.presenter.test.js)
+
+:exclamation: If you're having trouble testing TopBar buttons it's possible that Jest is caching React Native Navigation module, so you should reset your module imports after each test:
+```
+afterEach(() => {
+  jest.resetModules();
+});
+```
 
 ## Quick Recap
 
