@@ -1,3 +1,6 @@
+source 'https://github.com/react-native-community/react-native-tvos-podspecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'mobileCrashCourseTemp' do
@@ -26,16 +29,16 @@ target 'mobileCrashCourseTemp' do
   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
   pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
-  pod 'ReactCommon/jscallinvoker', :path => "../node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/callinvoker', :path => "../node_modules/react-native/ReactCommon"
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
-  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => true
 
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
-  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
+#  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
+#  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
 
   use_native_modules!
   target 'mobileCrashCourseTempTests' do
@@ -56,6 +59,7 @@ target 'mobileCrashCourseTemp-tvOS' do
   pod 'React-Core', :path => '../node_modules/react-native/'
   pod 'React-CoreModules', :path => '../node_modules/react-native/React/CoreModules'
   pod 'React-Core/DevSupport', :path => '../node_modules/react-native/'
+  pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS'
   pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
   pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob'
   pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image'
@@ -63,22 +67,23 @@ target 'mobileCrashCourseTemp-tvOS' do
   pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network'
   pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings'
   pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text'
+  pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration'
   pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/'
 
   pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact'
   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
   pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
-  pod 'ReactCommon/jscallinvoker', :path => "../node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/callinvoker', :path => "../node_modules/react-native/ReactCommon"
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
-  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => true
 
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
-  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
+#  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
+#  pod 'ReactNativeUiLib', :path => '../node_modules/react-native-ui-lib'
 
   use_native_modules!
   target 'mobileCrashCourseTemp-tvOSTests' do
